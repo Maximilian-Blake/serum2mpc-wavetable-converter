@@ -37,3 +37,31 @@ This utility is an independent, third-party tool. This application and its creat
 
 NO FACTORY CONTENT INCLUDED:
 This app does not distribute, contain, or replicate any factory wavetables, presets, or copyrighted audio material. This is strictly a local audio-processing script designed to transform files already legally owned by the user. You are responsible for ensuring you have the legal right to modify the audio files you process with this software.
+
+### 🖥️ Standalone Desktop Apps (Optional)
+If you are using the desktop builds, please read the installation and security guidelines below.
+<details>
+<summary><b>Click to expand: Installation & Security Guide</b></summary>
+
+Mac App:
+* On your Mac, choose Apple menu  > System Settings, then click Privacy & Security  in the sidebar. (You may need to scroll down.)
+* Open Privacy & Security settings
+* Go to Security, then click Open.
+* Click Open Anyway.
+* This button is available for about an hour after you try to open the app.
+* Enter your login password, then click OK.
+* The app for Mac has scored a 1/70 . You can view the live, verified security report here:
+* https://www.virustotal.com/gui/file/c2ab68ec480927e54113509082462278537682edf0a81e0edbdf7b4cf57dd664?nocache=1
+* "Yes, Microsoft's AI accidentally flagged this Mac app as a Windows app!" 
+
+Windows App:
+* When you double-click the .exe, a blue "Windows protected your PC" popup might appear.
+* Click the "More info" text link just beneath the warning.
+* A new button will appear at the bottom that says "Run anyway". Click it!
+* You only have to do this once.
+
+🔒 Security Verified: 100% Clean
+* Because this is a custom, independently developed utility, Windows and macOS might show a generic "Unrecognized Developer" popup the first time you try to run it. This is completely standard for indie tools!
+* The app for Windows has scored a perfect 0/70. You can view the live, verified security report here:
+* https://www.virustotal.com/gui/file/dd9bee08c824602879250faab63586316691b1c2cfe8c25f9f64a3dc6b6c81fd/details
+</details>
