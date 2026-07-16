@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavetable Bridge (Serum to MPC)</title>
+	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+<div class="app-wrapper">
+    <div class="app-window">
+        <div class="header">SERUM / SERUM 2 ➔ MPC WT CONVERTER</div>
+        
+        <div id="mainView" class="view-container">
+            <button class="btn-blue btn-large" id="btnGoSingle">
+                OPTION 1:<br><br>Click me to single export Serum/Serum2 Wavetable (.wav)
+            </button>
+            <button class="btn-blue btn-large" id="btnGoBulk">
+                OPTION 2:<br><br>Click me to bulk export Serum/Serum2 Wavetables
+            </button>
+        </div>
+
+        <div id="singleView" class="view-container hidden">
+            <div class="view-title">EXPORT SINGLE WAVETABLE</div>
+            
+            <div class="panel panel-expand">
+                <input type="text" id="singleFolderName" class="text-input" placeholder="Optional: Parent Folder Name (e.g., Analog_ )">
+                
+                <button class="btn-blue btn-xl" onclick="document.getElementById('singleInput').click()">
+                    Select Serum/Serum2 single Wavetable (.wav)
+                </button>
+                <div class="status-text status-center" id="singleFileStatus">No file selected</div>
+                <input type="file" id="singleInput" accept=".wav" style="display:none;">
+            </div>
+
+            <button class="btn-convert" id="convertSingleBtn" disabled>GENERATE MPC WAVETABLE</button>
+        </div>
+
+        <div id="bulkView" class="view-container hidden">
+            <div class="view-title">BULK EXPORT WAVETABLES</div>
+            
+            <div class="panel panel-expand">
+                <button class="btn-blue btn-xl" onclick="document.getElementById('folderInput').click()">
+                    Select Serum/Serum2 folder containing the Wavetables
+                </button>
+                <div class="status-text status-center" id="bulkFileStatus">No source selected</div>
+                <input type="file" id="folderInput" webkitdirectory directory multiple style="display:none;">
+            </div>
+
+            <button class="btn-convert" id="convertBulkBtn" disabled>GENERATE MPC WAVETABLES</button>
+        </div>
+
+        <div class="footer">
+            <span class="footer-link" id="btnCredits">CREDITS</span>
+            <span id="globalStatus" class="nav-status">READY</span>
+            <span class="footer-link" id="btnDisclaimer">DISCLAIMER</span>
+        </div>
+    </div>
+
+    <div class="social-column">
+        <a href="https://www.patreon.com/cw/MaximilianBlake?vanity=MaximilianBlake" class="social-btn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-patreon"></i> Patreon
+        </a>
+        <a href="https://www.youtube.com/@BlakeMaximilian" class="social-btn" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-youtube"></i> YouTube
+		</a>   
+        <a href="https://www.instagram.com/maximilian_blake" class="social-btn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.tiktok.com/@maximilian.blake" class="social-btn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i> TikTok
+        </a>
+    </div>
+</div>
+
+<div id="modalOverlay" class="modal-overlay hidden">
+    
+    <div id="disclaimerModal" class="modal-content hidden">
+        <div class="view-title">LEGAL DISCLAIMER & TERMS OF USE</div>
+        <div class="modal-text">
+            <p>This utility is an independent, third-party tool.</p>
+            <p>This application and its creator are NOT affiliated with, endorsed by, sponsored by, or associated with Xfer Records or Akai Professional (inMusic Brands, Inc.) in any way. "Serum", "MPC", and all related product names and logos are registered trademarks of their respective owners.</p>
+            <p><strong>NO FACTORY CONTENT INCLUDED:</strong></p>
+            <p>This app does not distribute, contain, or replicate any factory wavetables, presets, or copyrighted audio material belonging to Xfer Records.</p>
+            <p>This is strictly a local audio-processing script designed to transform .wav files already legally owned and stored locally by the user. You are responsible for ensuring you have the legal right to modify and use the audio files you process with this software.</p>
+            <p>Use this software at your own risk.</p>
+        </div>
+        <button class="btn-blue" id="closeDisclaimerBtn">CLOSE</button>
+    </div>
+
+    <div id="creditsModal" class="modal-content hidden">
+        <div class="view-title">CREDITS</div>
+        <div class="modal-text text-center">
+            <p><strong>Wavetable Converter (Serum to MPC) v1</strong></p>
+            <br>
+            <p>Developed by Maximilian Blake</p>
+        </div>
+        <button class="btn-blue" id="closeCreditsBtn">CLOSE</button>
+    </div>
+
+</div>
+
+</body>
+</html>
