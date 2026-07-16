@@ -8,7 +8,7 @@ A fast, secure and client-side utility to convert Serum & Serum 2 wavetables int
 * https://maximilian-blake.github.io/serum2mpc-wavetable-converter
 
 ### 🔗 Connect & Support:
-* Patreon https://www.patreon.com/cw/MaximilianBlake?vanity=MaximilianBlake
+* Patreon https://www.patreon.com/cw/MaximilianBlake
 * YouTube: https://www.youtube.com/@BlakeMaximilian
 * Instagram: https://www.instagram.com/maximilian_blake
 * TikTok: https://www.tiktok.com/@maximilian.blake
