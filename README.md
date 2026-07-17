@@ -59,9 +59,6 @@ Windows App:
 * Click the "More info" text link just beneath the warning.
 * A new button will appear at the bottom that says "Run anyway". Click it!
 * You only have to do this once.
-
-🔒 Security Verified: 100% Clean
-* Because this is a custom, independently developed utility, Windows and macOS might show a generic "Unrecognized Developer" popup the first time you try to run it. This is completely standard for indie tools!
-* The app for Windows has scored a perfect 0/70. You can view the live, verified security report here:
+* The app for Windows has scored a perfect 0/70 100% Clean. You can view the live, verified security report here:
 * https://www.virustotal.com/gui/file/dd9bee08c824602879250faab63586316691b1c2cfe8c25f9f64a3dc6b6c81fd/details
 </details>
