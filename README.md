@@ -1,8 +1,14 @@
-<img width="1024" height="576" alt="Serum2Wavetable_BowedMetal ML _pos1_MPC" src="https://github.com/user-attachments/assets/fc44dbc9-7155-43e2-b321-5c33f298cca4" />
-<img width="597" height="712" alt="Serum2Wavetable_BowedMetal ML _pos1" src="https://github.com/user-attachments/assets/5490e881-a89e-459f-ae06-d7762655e7d8" />
-
 # serum2mpc-wavetable-converter 🎹
 A fast, secure and client-side utility to convert Serum & Serum 2 wavetables into standard MPC compatible formats (strictly interpolating to 256 frames). 
+
+<img width="1024" height="576" alt="Serum2Wavetable_BowedMetal ML _pos1_MPC" src="https://github.com/user-attachments/assets/fc44dbc9-7155-43e2-b321-5c33f298cca4" />
+<img width="597" height="712" alt="Serum2Wavetable_BowedMetal ML _pos1" src="https://github.com/user-attachments/assets/5490e881-a89e-459f-ae06-d7762655e7d8" />
+<img width="711" height="534" alt="WavetableConverterSerum-Serum2MPC_00" src="https://github.com/user-attachments/assets/da84d9ce-b2d2-4854-926b-ee75b4708427" />
+<img width="709" height="593" alt="WavetableConverterSerum-Serum2MPC_01" src="https://github.com/user-attachments/assets/488a5caf-3138-47f1-858d-38fed4524d9f" />
+<img width="707" height="589" alt="WavetableConverterSerum-Serum2MPC_02" src="https://github.com/user-attachments/assets/b112a786-75e3-4cf8-9325-511e4177f5d8" />
+<img width="709" height="536" alt="WavetableConverterSerum-Serum2MPC_03" src="https://github.com/user-attachments/assets/dd0ae283-aab0-49fb-804f-76398adc9f20" />
+<img width="709" height="532" alt="WavetableConverterSerum-Serum2MPC_04" src="https://github.com/user-attachments/assets/5be84287-c469-4fb2-81a5-2c1909e8768d" />
+<img width="709" height="536" alt="WavetableConverterSerum-Serum2MPC_05" src="https://github.com/user-attachments/assets/53fa5f6a-8072-4f26-bb80-3144d1f7cc8d" />
 
 🌐 Launch the Web App Here:
 * https://maximilian-blake.github.io/serum2mpc-wavetable-converter
