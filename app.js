@@ -329,6 +329,15 @@ convertBulkBtn.addEventListener('click', async () => {
         const zip = new JSZip();
         let successCount = 0;
 
+        // Create the exact required folder structure
+        const targetFolder = zip.folder("Serum");
+
+        // Create the single format.json file for the entire batch
+        const formatJson = JSON.stringify({
+            "formatInfo": { "numSamplesPerSingleCycle": 2048, "numSingleCycles": 256 }
+        }, null, 4);
+        targetFolder.file("format.json", formatJson);
+
         for (let i = 0; i < bulkSelectedFiles.length; i++) {
             const file = bulkSelectedFiles[i];
             
@@ -344,13 +353,8 @@ convertBulkBtn.addEventListener('click', async () => {
                 const baseName = file.name.replace(/\.wav$/i, '');
                 const newBaseName = `${parentFolderName}_${baseName}`;
                 
-                const folder = zip.folder(newBaseName);
-                folder.file(`${newBaseName}.wav`, processedAudioBuffer); 
-                
-                const formatJson = JSON.stringify({
-                    "formatInfo": { "numSamplesPerSingleCycle": 2048, "numSingleCycles": 256 }
-                }, null, 4);
-                folder.file("format.json", formatJson);
+                // Add the .wav file directly into the root of the Serum folder
+                targetFolder.file(`${newBaseName}.wav`, processedAudioBuffer); 
                 
                 successCount++;
             } catch (err) {
