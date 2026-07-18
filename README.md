@@ -10,6 +10,22 @@ A fast, secure and client-side utility to convert Serum & Serum 2 wavetables int
 <img width="709" height="532" alt="WavetableConverterSerum-Serum2MPC_04" src="https://github.com/user-attachments/assets/5be84287-c469-4fb2-81a5-2c1909e8768d" />
 <img width="709" height="536" alt="WavetableConverterSerum-Serum2MPC_05" src="https://github.com/user-attachments/assets/53fa5f6a-8072-4f26-bb80-3144d1f7cc8d" />
 
+### 🚀 What's New in v1.1
+
+**Bulk Export Improvements**
+The bulk export engine has been rewritten to perfectly match the MPC's native file architecture, saving you from cluttered directories.
+
+*   **Single "format.json" Architecture:** The engine now generates only *one* master "format.json" file per export batch, drastically reducing clutter and saving disk space. The MPC reads this single root file and applies it to every wavetable inside the folder.
+
+*   **Automated Directory Structure:**  Your new wavetables drop right into the root of a new created "Serum" folder ready to be copy&paste inside the standalone MPC "Oscillators" ➔ "Wavetables" folders.
+
+*   **Smart Prefix Naming:** Bulk exported ".wav" files now automatically inherit their original parent folder's name as a prefix (e.g., "Analog_Acid.wav"), ensuring no naming collisions when compiling a massive master library.
+
+<img width="1024" height="576" alt="v1 1_00" src="https://github.com/user-attachments/assets/1a05b1c0-b540-4364-8fed-af0f73aff16b" />
+<img width="1024" height="576" alt="v1 1_01" src="https://github.com/user-attachments/assets/9f5a1861-372a-45fd-a4ee-6d7c5d23f71f" />
+<img width="1024" height="576" alt="v1 1_02" src="https://github.com/user-attachments/assets/c4ca0234-0e34-4815-9461-e007447e0531" />
+<img width="1024" height="576" alt="v1 1_03" src="https://github.com/user-attachments/assets/ab6c3a69-5af6-4e96-a161-034c2a4d91c6" />
+
 🌐 Launch the Web App Here:
 * https://maximilian-blake.github.io/serum2mpc-wavetable-converter
 
