@@ -25,6 +25,7 @@ The bulk export engine has been rewritten to perfectly match the MPC's native fi
 <img width="1024" height="576" alt="v1 1_01" src="https://github.com/user-attachments/assets/9f5a1861-372a-45fd-a4ee-6d7c5d23f71f" />
 <img width="1024" height="576" alt="v1 1_02" src="https://github.com/user-attachments/assets/c4ca0234-0e34-4815-9461-e007447e0531" />
 <img width="1024" height="576" alt="v1 1_03" src="https://github.com/user-attachments/assets/ab6c3a69-5af6-4e96-a161-034c2a4d91c6" />
+<img width="569" height="669" alt="Serum2_Analog_4088" src="https://github.com/user-attachments/assets/937d3db2-e671-42a0-b31a-5c55cb228599" />
 
 🌐 Launch the Web App Here:
 * https://maximilian-blake.github.io/serum2mpc-wavetable-converter
